@@ -1,0 +1,56 @@
+body {
+    position: relative;
+}
+
+header {
+    background-color: greenyellow;
+    position: sticky;
+    top: 1px;
+}
+
+div {
+    background-color: chartreuse;
+    position: relative;
+ /* position: static;
+    top: 50px;  all 4 will be ignored if used with static position */
+ /* position: relative;
+    top:5px; 
+    bottom: 5px; only two properties will work, rest will be ignored, ie left and top
+    left: 5px;
+    right: 5px; */
+    /* inset: 5px; shortcut that includes all 4 top,right,bottom,left */
+}
+
+ul {
+    background-color: brown;
+    /* position: relative;   children of relative positioned parent or grandparent will move along with parent instead of viewport ie li */
+    height: 300px;
+    margin-top: -100px;
+    overflow-y: scroll;
+}
+
+.html-element {
+    background-color: darkkhaki;
+    position: sticky; /* only top and bottom properties will work with sticky position and child is attached to parent so parent should have height & overflow-y scroll property if not then child becomes attached to viewport in terms of top & bottom properties*/
+    top: 100px; 
+}
+
+.css-element {
+    background-color: aquamarine;
+    position: absolute;  /* all defined properties will work with absolute position */
+    top: 150px;
+ /* left: 5px;
+    right: 5px; 
+    bottom: 5px; 
+    inset: 5px;*/
+}
+
+.js-element {
+    background-color: darkorange;
+    position: fixed; /* all defined properties will work with fixed position and always connected to viewport*/
+    top: 10px;
+    left: 10px;
+    right: 10px;    
+ /* bottom: 10px;
+    inset: 10px; */
+}

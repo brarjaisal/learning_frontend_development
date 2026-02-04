@@ -1,0 +1,50 @@
+.square {
+  background-color: lightgreen;
+  width: 300px;
+  height: 300px;
+  border: 25px solid lightpink;
+  /* print-color-adjust: exact; */
+  /* -webkit-color-adjust: exact; */
+}
+
+/* @media (width <= 700px) {    
+    .square {
+        border: 25px solid coral;
+        background-color: brown;
+    }
+} */
+
+/* @media (500px <= width <= 700px) {    
+    .square {
+        border: 25px solid coral;
+        background-color: brown;
+    }
+} */
+
+/* @media (min-width: 700px) {
+  .square {
+    border: 25px solid coral;
+    background-color: brown;
+  }
+} */
+
+@media (max-width: 700px) {
+  .square {
+    border: 25px solid coral;
+    background-color: brown;
+  }
+}
+
+/* @media (min-height: 700px) {
+  .square {
+    border: 25px solid coral;
+    background-color: brown;
+  }
+} */
+
+/* @media (max-height: 700px) {
+  .square {
+    border: 25px solid coral;
+    background-color: brown;
+  }
+} */

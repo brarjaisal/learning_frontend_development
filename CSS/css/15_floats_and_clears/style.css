@@ -1,0 +1,36 @@
+h1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: chocolate;
+    display: flow-root;  /* content will stay in parent with this   */
+}
+
+/* a {
+    background-color: burlywood;
+    float: left; 
+    margin-right: 0.75em;
+    width: 200px;
+} */
+
+img {
+    float: left;
+    /* float:right; */
+    margin-left: 0.75rem;;
+    margin-right: 0.75rem;
+    width: 200px;
+    /* position: absolute; */
+}
+
+.first-paragraph {
+    background-color: bisque;
+    /* clear: both; */
+    /* margin-top: -50px; */
+    /* clear: left; */
+    /* clear: right; */
+}
+
+/* text doesnot go under floated element */

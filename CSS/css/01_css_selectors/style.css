@@ -1,0 +1,83 @@
+li {
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.html {
+  color: #dd4b25;
+}
+
+.css {
+  color: #254bdd;
+}
+
+.js {
+  color: #efd81d;
+}
+
+.react {
+  color: #5ed3f3;
+}
+
+.tailwind {
+  color: #0ea5e9;
+}
+
+/* [class] { 
+    background-color: rgb(247, 235, 221);
+}
+
+.intro {
+    background-color: aliceblue;
+}
+*/
+
+.web p {
+  background-color: lightyellow;
+}
+
+h1:hover {
+  color: orange;
+}
+
+.intro:hover {
+  color: plum;
+}
+
+/*  --- type of selectors covered here: 
+element selector e.g. 
+h1 {
+  property: value;
+}
+
+class selector e.g. 
+.class {
+  property: value;
+}
+
+attribute selector e.g. 
+[class] {
+  property: value;
+}
+
+id selector e.g.
+#id {
+  property: value;
+}
+
+descendant selector e.g. 
+parent child {
+  property: value;
+}
+
+pseudo-class selector e.g.
+element:pseudo-class {
+  property: value;
+}
+ 
+pseudo-element selector e.g.
+element::pseudo-element {
+  property: value;
+}   
+
+--- */

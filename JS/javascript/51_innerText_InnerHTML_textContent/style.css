@@ -1,0 +1,17 @@
+#css-img {
+    border: 4px solid green;
+}
+
+/* attribute selector */
+[alt="javascript roadmap"] {
+    border: 4px solid pink;
+}
+
+
+/* compare innerText & textContent by applying each of the following properties */
+p b {
+    /* display: none; */
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    /* pointer-events: none; */
+}

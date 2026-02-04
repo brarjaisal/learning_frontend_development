@@ -1,0 +1,38 @@
+li.html {
+  background-color: olive !important;
+}
+
+li {
+  background-color: lightblue !important; /* highest specificity, overrides all including inline styles from html */
+  color: brown;
+}
+
+li {
+  background-color: blueviolet !important; /* only !important overrides !important and then it is decided by cascade ruling between the two */
+  color: brown;
+}
+
+#html {
+  background-color: deeppink;
+}
+
+#html {
+  background-color: gold;
+}
+
+#html {
+  background-color: mediumorchid;
+}
+
+li {
+  background-color: lightpink;
+}
+
+li {
+  background-color: lightgreen;
+  color: blue;
+}
+
+.html {
+  background-color: orangered;
+}

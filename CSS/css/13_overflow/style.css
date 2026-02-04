@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+  /* overflow: hidden; */
+}
+
+.box {
+  font-size: 4rem;
+  border: 4px solid;
+  /* width: 170px; don't use width but use max/min width instead, otherwise it causes overflow*/
+  /* max-width: 400px;  */
+  /* overflow: scroll;  */
+}
+
+@media (width < 400px) {
+  .box {
+    font-size: 2rem;
+  }
+}

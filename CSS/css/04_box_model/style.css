@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  background-color: #4aa788d1;
+}
+
+.one {
+  background-color: rgb(228, 244, 161);
+  color: darkblue;
+  width: 300px;
+  padding: 25px;
+  margin: 40px;
+  border: 4px solid #9be2e2;
+  border-radius: 10px;
+  outline: 10px solid goldenrod;
+  /* word-break: break-all; */
+}
+
+.two {
+  background-color: burlywood;
+  width: 300px;
+  height: 300px;
+  padding: 25px;
+  margin: 40px;
+  border: 8px solid hotpink;
+  border-radius: 100%;
+  overflow: hidden;
+  outline: 10px solid plum;
+}
+
+img {
+  width: 123%;
+  margin-top: -123px;
+  margin-left: -25px;
+}

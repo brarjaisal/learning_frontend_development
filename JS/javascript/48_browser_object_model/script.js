@@ -1,0 +1,1 @@
+// play around with it in console using window object

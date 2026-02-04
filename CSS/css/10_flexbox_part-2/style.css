@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}   
+
+.parent {
+    /* padding: 10px; */
+    border: 4px solid indianred;
+    /* height: 50vh; */
+    display: flex;
+    height: 400px;
+    /* align-items: center; */
+    /* align-content: center; */
+    /* justify-content: space-between; */
+    /* align-items: flex-end; */
+    /* flex-wrap: wrap; */
+    /* gap: 16px; */
+    /* flex-direction: column; */
+    /* flex-direction: row; default */
+    /* flex-direction: row-reverse; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* align-items: stretch; */
+}
+
+.parent span {
+    /* border: 4px solid cadetblue; */
+    background-color: cadetblue;
+    /* font-size: 32px; */
+    /* margin-inline: auto;
+    margin-block: auto; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    /* width: 200px; */
+    /* height: 300px; */
+    /* width: 100px; */
+    /* flex-basis: 400px; */
+    /* flex-basis: 100px; */
+    /* order: 10; */
+    /* flex: 100px 2 3; */
+}
+
+.parent p {
+    /* border: 4px solid darkkhaki; */
+    background-color: darkkhaki;
+    /* margin-block: 0;
+    margin-inline: 16px; */
+    /* margin: 0 16px; */
+    /* margin : 0 10px 20px 30px; */
+    /* margin: auto; */
+    /* margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto; */
+    margin: 0;
+    /* width: 100%;
+    flex-basis: 100%; */
+    /* width: 400px; */
+    /* flex-shrink: 0; */
+    /* width: max-content; */
+    /* width: min-content; */
+    /* order: -5 */
+}
+
+.parent a {
+    /* border: 4px solid yellowgreen; */
+    background-color: yellowgreen;
+    /* margin-inline: auto; */
+    /* margin-block: auto; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    /* flex-basis: 100%; */ */
+    /* width: 400px; */
+    /* height: 150px; */
+    /* width: 100%;
+    /* order: -1; */
+    /* align-self: center; */
+}
+
+.parent > * {
+    width: 200px;
+    /* flex-shrink: 0; */
+}
+
+/* .parent > * + * {
+    margin-left: 16px;
+} */

@@ -1,0 +1,70 @@
+body {
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.first-container {
+    background-color: blanchedalmond;
+    box-shadow: 0 5px 16px;
+    position: relative;
+    z-index: 5;
+}
+
+.second-container {
+    background-color: lavender;
+    box-shadow: 0 5px 16px;
+    margin-left: 2rem;
+    padding: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: -100px;
+}
+
+.red-box {
+    background-color: red;
+    position: relative; /* if other elements are not given position property this will make red on top*/
+    /* z-index: 10;     only works if position property is set */
+}
+
+.green-box {
+    background-color: green;
+    left: 2rem;
+    position: relative;
+    /* z-index: 5;      */
+}
+
+.blue-box {
+    background-color: blue;
+    left: 3rem;
+    position: relative;
+    /* z-index: 6;  */
+}
+
+.first-container .blue-box {
+    z-index: 1;
+}
+
+.second-container .red-box {
+    z-index: 5;
+}
+
+/* if multiple elements are assigned position property other than static  then html positioning decides which comes first*/
+/* if z-index is not assigned then html positioning decides which comes first*/
+/* if z-index is assigned then higher z-index comes on top*/
+/* if z-index is assigned to parent then children follow same value */
+/* z-index only works when position property is set to relative, absolute, fixed or sticky */
+/* stacking context is created when position property is set and z-index is assigned to an element */
+/* stacking context is also created with other properties like opacity less than 1, transform property etc */

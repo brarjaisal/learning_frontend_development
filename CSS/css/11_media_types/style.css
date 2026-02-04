@@ -1,0 +1,22 @@
+.square {
+    background-color: lightgreen;
+    width: 300px;
+    height: 300px;
+    border: 25px solid lightpink;
+    /* print-color-adjust: exact; */
+    /* -webkit-color-adjust: exact; */
+}
+
+ @media print { /* used for making changes in printing documents */
+    .square {
+        border: 25px solid coral;
+        background-color: brown;
+    }
+}
+
+    @media screen { /* used for making changes in screen display, not used often */
+        .square {
+            border: 25px solid lightpink;
+            background-color: lightgreen;
+        }
+    }
