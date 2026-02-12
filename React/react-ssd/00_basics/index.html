@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>React Basics</title>
+  </head>
+  <body>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+      const button = <button>Click me</button>;
+      const paragraph = <p>This is a paragraph.</p>;
+
+      const div = (
+        <div>
+          <button>Click me</button>
+          <p>This is a paragraph{2 + 3}</p>
+        </div>
+      );
+
+      const container = document.querySelector(".js-container");
+      ReactDOM.createRoot(container).render(div);
+    </script>
+  </body>
+</html>
+
+<!-- Learning Points:
+1. React uses JSX, which allows us to write HTML-like syntax in JavaScript.
+2. We can create React elements using JSX and render them to the DOM using ReactDOM.
+3. JSX can include JavaScript expressions inside curly braces {}.
+4. We can create complex UI structures by nesting JSX elements.
+5. ReactDOM.createRoot is used to create a root for rendering our React application, 
+and we can call the render method to display our JSX elements in the DOM. -->

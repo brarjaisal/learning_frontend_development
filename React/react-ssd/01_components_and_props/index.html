@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Chatbot</title>
+  </head>
+  <body>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+      function ChatInput() {
+        return (
+          <>
+            <input placeholder="Type your message here..." size="30" />
+            <button>Send</button>
+          </>
+        );
+      }
+
+      function ChatMessage({ message, sender }) {
+        // const message = props.message;
+        // const sender = props.sender;
+        // const { message, sender } = props;
+
+        /*
+        if (sender === "bot") {
+          return (
+            <div>
+              <img src="robot.png" width="50" />
+              {message}
+            </div>
+          ); 
+        } */
+
+        return (
+          <div>
+            {sender === "bot" && <img src="robot.png" width="50" />}
+            {message}
+            {sender === "user" && <img src="user.png" width="50" />}
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <>
+            <ChatInput />
+            <ChatMessage message="Hello Chatbot" sender="user" />
+            <ChatMessage message="Hello! How can I help you?" sender="bot" />
+            <ChatMessage message="Roll a Dice" sender="user" />
+            <ChatMessage message="Sure! You rolled a 4." sender="bot" />
+          </>
+        );
+      }
+
+      const container = document.querySelector(".js-container");
+      ReactDOM.createRoot(container).render(<App />);
+    </script>
+  </body>
+</html>
+
+<!-- Components, Props Started Chatbot Project
+ Learning Points :
+1. React components are reusable pieces of UI that can be defined as functions.
+Components can accept inputs called props, which allow you to customize their behavior and appearance.
+props are passed to components as an object, and you can access them using dot notation or destructuring.
+
+2. Props (short for properties) are used to pass data from a parent component to a child component.
+
+3. You can use destructuring to extract props directly in the function parameters for cleaner code.
+4. Conditional rendering can be achieved using JavaScript expressions inside JSX, such as the logical AND (&&) operator.
+5. React components can return multiple elements wrapped in a fragment (<>...</>) to avoid unnecessary divs in the DOM.
+6. The ReactDOM.createRoot method is used to render a React component into a specified DOM container.
+
+Component Hierarchy:
+- App
+  - ChatInput
+  - ChatMessage (multiple instances with different props) 
+Component Reusability:
+- The ChatMessage component is reusable and can display different messages and sender types based on the props passed to it. This allows for a flexible and dynamic UI without needing to create separate components for each message type.
+
+component = a piece of website
+component = create our own html elements
+props = properties of the component that make component reusable
+Destructuring = extract values from objects and arrays
+Conditional Rendering = render different UI based on conditions
+createRoot = method to render a React component into the DOM -->
